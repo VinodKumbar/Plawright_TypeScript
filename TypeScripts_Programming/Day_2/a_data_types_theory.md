@@ -2,6 +2,13 @@
 ✔ Primitive types (number, string, boolean, etc.) are basic and hold single values.
 ✔ Non-primitive types (Array, Class, Interface, etc.) are complex and hold structured data.
 
+
+ 1. Primitive Data Types  - Number, String, Boolean, Null, Any, Void, Undefined
+ 2. Non-Primitive Data Types - Array, Tuple, Object, Class, Enum, Interface, Function
+
+ -> Primitive Data Type will allow only one type of value to be assigned to a variable at a time.
+ -> Non-Primitive Data Type will allow multiple types of values to be assigned to a variable at a time.
+
 */
 
 

@@ -35,11 +35,6 @@ let isLoggedIn: boolean = true; // Example of a boolean type
 •	Represents an intentional empty value (let x = null).
 let emptyValue: null = null; // Example of a null type
 
-5.	Undefined
-•	Represents a variable declared but not assigned (let y; → y is undefined).
-let notAssigned: undefined; // Example of an undefined type
-let uninitialized: undefined; // Example of an uninitialized variable
-let unassigned: undefined = undefined; // Explicitly set to undefined
 
 6.	Any
 •	A flexible type that allows any value (disables TypeScript checks).
@@ -48,12 +43,7 @@ let flexible: any = "Hello"; // Example of an any type
 flexible = 10; // Can be reassigned to any type
 
 
-7.	Union Type
-•	Allows multiple types for a variable (let id: string | number = "123";).
-let id: string | number = "123"; // Example of a union type
-id = 456; // Can be reassigned to a number
-
-8.	Void
+7.	Void
 •	Used for functions that don’t return anything (function log(): void { console.log("Hi"); }).
 function logMessage(): void {
     console.log("This function does not return anything.");
@@ -69,10 +59,6 @@ log(); // Call the function
 1.	Array
 •	Represents a collection of values (e.g., [1, 2, 3]).
 let numbers: number[] = [1, 2, 3]; // Example of an array type
-
-2.	Tuple
-•	Represents a fixed-size array with known types (e.g., [string, number]).
-let user: [string, number] = ["Alice", 30]; // Example of a tuple type
 
 3.	Object
 •	Represents a collection of key-value pairs.

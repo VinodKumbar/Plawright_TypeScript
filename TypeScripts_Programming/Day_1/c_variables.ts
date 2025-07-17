@@ -35,7 +35,17 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 */
 
-/* difference between let, const, and var:
+/* 
+
+
+// var global level variable
+var globalVariable = "I am a global variable"; // Global variable
+
+//let and const are block scoped variables
+let blockScopedVariable = "I am a block scoped variable"; // Block scoped variable
+const constantVariable = "I am a constant variable"; // Constant variable
+
+difference between let, const, and var:
  let: Block-scoped variable that can be reassigned.
  const: Block-scoped variable that cannot be reassigned.
 var: Function-scoped variable that can be reassigned. */

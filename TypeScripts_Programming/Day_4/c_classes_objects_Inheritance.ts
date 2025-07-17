@@ -1,5 +1,15 @@
 console.log("Classes in TypeScript:");
 
+/* An object is a collection of key-value pairs, where:
+
+Keys are called properties (like name, age),
+
+Values can be data or functions.
+
+A class is a blueprint for creating objects. It defines the properties (data) and methods (functions) that the objects created from the class will have.
+
+*/
+
 class Person {
     firstName: string;
     lastName: string;

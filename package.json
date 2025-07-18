@@ -1,5 +1,8 @@
 {
   "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^24.0.14",
+    "playwright": "^1.54.1",
     "ts-node": "^10.9.2",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3"
@@ -18,9 +21,7 @@
     "v8-compile-cache-lib": "^3.0.1",
     "yn": "^3.1.1"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "Vinod",
   "license": "ISC",

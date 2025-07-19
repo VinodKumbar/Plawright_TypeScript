@@ -16,6 +16,14 @@ To install Playwright
    ```
 5. **Create a Test File**: Create a new file named `example.spec.ts` and add the following code to test Playwright:
    ```typescript
+syntax of the code:
+
+test("title",({page})=>{
+//Step1:console.log("hello world")
+//Step2:await page.goto("https://www.google.com")
+//Step3:expect(page).toHaveTitle("Google")
+})
+
    import { test, expect } from '@playwright/test';
 
    test('basic test', async ({ page }) => {

@@ -28,6 +28,7 @@ test('Verify Codegen feature in Playwright', async ({ page }) => {
 
     // This command will open a browser window and allow you to interact with the page using your mouse and keyboard.
     // npx playwright codegen 
-    // npx playwright codegen -o tests/Day_8_codegen_test.spec.ts https://www.demoblaze.com/index.html
+    // npx playwright codegen -o tests/Day_8_codegen_test.spec.ts http://www.automationpractice.pl/index.php
+    // npx playwright codegen -o tests/Day_8_codegen_test.spec.ts https://demo.opencart.com/
 
 });

@@ -12,3 +12,15 @@ Class LoginPage{
 // define methods
 
 }
+
+Public access modifiers are used to define the visibility of the variables and methods.
+3 Types of access modifiers are used in Page Object Model:
+1. Public
+2. Private
+3. Protected
+
+Public variables and methods can be accessed from outside the class.
+Private variables and methods can only be accessed within the class.
+Protected variables and methods can be accessed within the class and its subclasses.
+
+

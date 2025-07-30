@@ -34,7 +34,7 @@ Hooks concept
 
 1. beforeEach: This hook runs before each test in the file. It is typically used to set up the environment, such as navigating to a specific page or logging in.
 2. afterEach: This hook runs after each test in the file. It is often used to clean up the environment, such as logging out or resetting the state.
-
+```
 
 ************************************************************************************************************************************
 
@@ -45,3 +45,24 @@ Tagging tests in Playwright allows you to categorize and filter tests based on s
 
 
 npm run test:sanity
+```
+**************************************************************************************************************************************
+
+Allure Reporting in Playwright is a powerful feature that allows you to generate detailed and visually appealing reports for your test runs. Allure provides insights into test execution, including passed, failed, and skipped tests, along with detailed logs and screenshots.
+
+command to install Allure:
+```bash
+npm install -g allure-commandline --save-dev
+
+Command to generate Allure report:
+```bash
+npx allure generate ./allure-results --clean && npx allure open 
+```
+
+**********************************************************************************************************************
+In Playwright with TypeScript, you can use .env files to manage environment-specific variables such as URLs, credentials, or API keys. This is helpful to avoid hardcoding sensitive information in your codebase
+```typescript
+npm install dotenv
+```
+```typescript
+npm install --save-dev cross-env

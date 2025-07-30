@@ -1,9 +1,10 @@
 
+
 import { test, expect } from '@playwright/test';
-import LoginPage from '../page_object_model/LoginPage';
+import LoginPage from '../page_object_model/LoginPage_DAY_11_dbdata';
 import { fetchEcomDataBase } from '../utilitis/databaseReader';
 
-test('Verify Login functionality from MySQL DB', async ({ page }) => {
+test('@Sanity Verify Login functionality from MySQL DB', async ({ page }) => {
 
     const loginPage = new LoginPage(page);
     
@@ -12,8 +13,10 @@ test('Verify Login functionality from MySQL DB', async ({ page }) => {
     const password = data[0].password; 
     const productName = data[0].productname; 
 
-   // Navigate to the login page and perform login
-   await loginPage.navigateToLoginPage();
+
+    // Navigate to the login page and perform login
+  await loginPage.navigateToLoginPage();
+  await expect(loginPage.signinPageTitle).toHaveText('Login to your account');
    await loginPage.login(email, password);
 
    // Verify the URL and header after login

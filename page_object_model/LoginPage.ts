@@ -24,7 +24,7 @@ class LoginPage {
     
     // Action Methods
     async navigateToLoginPage() {
-        await this.page.goto('/');
+       await this.page.goto('/');
        await this.loginLink.click();
     
     }

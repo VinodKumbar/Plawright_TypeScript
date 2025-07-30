@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","52155","@Sanity Verify Login functionality on Demo Web Shop, JSON Test Data","chromium","Wed Jul 30 06:49:28 IST 2025","failed","Wed Jul 30 06:50:20 IST 2025","","Day_10_Login_json.spec.ts","",""
+"","33155","@Sanity Verify Login functionality from MySQL DB","chromium","Wed Jul 30 06:55:09 IST 2025","passed","Wed Jul 30 06:55:42 IST 2025","","Day_11_Login_dbdata.spec.ts","",""

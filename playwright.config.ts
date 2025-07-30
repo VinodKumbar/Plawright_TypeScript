@@ -1,4 +1,12 @@
 import { defineConfig, devices } from '@playwright/test';
+import * as dotenv from 'dotenv';
+dotenv.config();
+
+const baseURL = process.env.ENV === 'QA' ? process.env.QA_URL : process.env.PROD_URL;
+
+console.log('Running tests on:', baseURL);
+
+
 
 
 export default defineConfig({
@@ -12,12 +20,19 @@ export default defineConfig({
     timeout: 5000, // 5 seconds
   },
 
+  
+
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-     baseURL: 'https://www.automationexercise.com/login',
+     baseURL: baseURL,
 
-   
+     screenshot: 'only-on-failure', // Take screenshot only on test failure
+      trace: 'retain-on-failure', // Retain trace files only on test failure
+      video: 'retain-on-failure', // Retain video files only on test failure
+
   },
+
+  reporter: [['allure-playwright']],
 
   /* Configure projects for major browsers */
   projects: [

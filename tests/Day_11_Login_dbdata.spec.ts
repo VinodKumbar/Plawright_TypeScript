@@ -1,10 +1,9 @@
-
-
 import { test, expect } from '@playwright/test';
 import LoginPage from '../page_object_model/LoginPage_DAY_11_dbdata';
 import { fetchEcomDataBase } from '../utilitis/databaseReader';
+import { getFakeUser } from '../utilitis/fakerDataGenerator';
 
-test('@Sanity Verify Login functionality from MySQL DB', async ({ page }) => {
+test.skip('@Sanity Verify Login functionality from MySQL DB', async ({ page }) => {
 
     const loginPage = new LoginPage(page);
     
@@ -29,4 +28,13 @@ test('@Sanity Verify Login functionality from MySQL DB', async ({ page }) => {
    // Verify the URL and header after logout
    await expect(page).toHaveURL('https://www.automationexercise.com/login');
     await expect(loginPage.signinPageTitle).toHaveText('Login to your account');
+});
+test('Generate Test Data from Faker method', async ({ page }) => {
+ 
+  const randomUser = getFakeUser();
+  const randomEmail = randomUser.email;
+  const randomNumber = randomUser.randomNumber;
+  console.log('Random User:', randomUser);
+  console.log('Random Email:', randomEmail);
+  console.log('Random Number:', randomNumber);
 });

@@ -66,3 +66,16 @@ npm install dotenv
 ```
 ```typescript
 npm install --save-dev cross-env
+```
+**********************************************************************************************************************
+Test data using Faker.js is a common practice in automated testing to generate realistic and random data for testing purposes. Faker.js is a library that allows you to create fake data such as names, addresses, phone numbers, and more.
+```typescript
+npm install faker
+```
+```typescript
+import { faker } from '@faker-js/faker'
+// Example of generating fake data
+const randomName = faker.name.findName(); // Generates a random name
+const randomEmail = faker.internet.email(); // Generates a random email address
+const randomAddress = faker.address.streetAddress(); // Generates a random street address
+```

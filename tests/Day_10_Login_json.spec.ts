@@ -4,7 +4,7 @@ import testData from '../test-data/creds.json';
 
 
 // Read test data from JSON file
-test('Verify Login functionality on Demo Web Shop, JSON Test Data', async ({ page }) => {
+test('@Sanity Verify Login functionality on Demo Web Shop, JSON Test Data', async ({ page }) => {
    const loginPage = new LoginPage(page);
    const email = testData[0].email;
    const password = testData[0].password;

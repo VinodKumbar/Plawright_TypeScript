@@ -3,7 +3,7 @@ import LoginPage from '../page_object_model/LoginPage_DAY_11_dbdata';
 import { fetchEcomDataBase } from '../utilitis/databaseReader';
 import { getFakeUser } from '../utilitis/fakerDataGenerator';
 
-test('@Sanity Verify Login functionality from MySQL DB', async ({ page }) => {
+test('Verify Login functionality from MySQL DB', async ({ page }) => {
 
     const loginPage = new LoginPage(page);
     

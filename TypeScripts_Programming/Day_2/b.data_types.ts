@@ -1,4 +1,4 @@
-let age: number = 25; // age is a number
+let age2: number = 25; // age is a number
 
 // let is Declare a block-scoped variable
 // age is Variable name
@@ -6,9 +6,9 @@ let age: number = 25; // age is a number
 // 25 is Initial value assigned to age
 
 
-let firstName: string = "John"; // firstName is a string
+let personName: string = "John"; // personName is a string
 
-console.log("my name is " + firstName + " and I am " + age + " years old."); // Output: John is 25 years old.
+console.log("my name is " + personName + " and I am " + age + " years old."); // Output: John is 25 years old.
 
 console.log("*******************************************************************************************************"); 
 
@@ -20,8 +20,8 @@ console.log("The price of the burger is: " + burgerPrice); // Output: The price 
 console.log("*******************************************************************************************************"); 
 
 // String type example
-let greeting: string = "Hello, TypeScript!"; // greeting is a string
-console.log(greeting); // Output: Hello, TypeScript!
+let welcomeMessage: string = "Hello, TypeScript!"; // welcomeMessage is a string
+console.log(welcomeMessage); // Output: Hello, TypeScript!
 
 console.log("*******************************************************************************************************");
 
@@ -50,10 +50,10 @@ console.log("*******************************************************************
  }
 show(); // Output: Welcome everyone to TypeScript!
 console.log("*******************************************************************************************************");
- function add(x:number, y:number): number { // add is a function that takes two numbers and returns a number
+ function addNumbers(x:number, y:number): number { // addNumbers is a function that takes two numbers and returns a number
      let sum: number = x + y; // sum is a number
     console.log("Sum of x and y is: ", sum); // Output: Sum of x and y is: 30
     return sum;
  }
- let result = add(10, 20); // Call the add function to execute it
+ let result = addNumbers(10, 20); // Call the addNumbers function to execute it
  console.log("The result is: ", result); // Output: The result is: 30

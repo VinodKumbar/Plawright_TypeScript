@@ -81,12 +81,12 @@ const numbers: number[] = [1, 2, 3, 4];
 const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 console.log(sum); // Outputs 10
 
-9. filter Method : filiters elements of an array based on a condition.
+9. filter Method : filters elements of an array based on a condition.
 ```typescript
 const filteredFruits = fruits.filter((fruit) => fruit.startsWith("A"));
 console.log(filteredFruits); // Outputs ["Apple"]
 
-10. map Method
+10. map Method : creates a new array by applying a function to each element of the original array.
 ```typescript
 const fruitLengths = fruits.map((fruit) => fruit.length);
 console.log(fruitLengths); // Outputs [5, 6, 6, 4, 6]

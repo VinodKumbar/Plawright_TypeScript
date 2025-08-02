@@ -1,6 +1,7 @@
 import { test, expect, Locator } from '@playwright/test';
 
-test.describe('Playwright Built-in Locators and CSS Selectors', () => {
+test.describe('Locators Test Suite : Playwright Built-in Locators and CSS Selectors', () => {
+  
 test.skip('Verify Playwright Builtin Locators ', async ({ page }) => {
   await page.goto('https://demo.nopcommerce.com/');
 

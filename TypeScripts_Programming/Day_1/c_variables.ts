@@ -12,15 +12,15 @@
 
 // Variables can be declared using let, const, or var keywords
 
-let age: number = 30; // age is a variable of type number
-const firstName: string = "John"; // firstName is a variable of type string
+let age1: number = 30; // age is a variable of type number
+const firstName1: string = "John"; // firstName1 is a variable of type string
 
 var z: number = 30; // z is a variable of type number - NOT RECOMMENDED to use var in TypeScript
 
 
 
 console.log(age); // Output: 30
-console.log(firstName); // Output: John
+console.log(firstName1); // Output: John
 
 
 /*

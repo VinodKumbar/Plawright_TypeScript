@@ -51,8 +51,8 @@ console.log("All fruits: " + allFruits);
 const marks: number[] = [85, 90, 78, 92, 88];
 console.log("Marks array: " + marks);
 console.log("Using Reduce to calculate the sum of marks:");
-const sum = marks.reduce((accumulator, current) => accumulator + current, 0);
-console.log("Sum of marks: " + sum);
+const sum2 = marks.reduce((accumulator, current) => accumulator + current, 0);
+console.log("Sum of marks: " + sum2);
 
 console.log("-------------------------------------------------------------------------------------------------");
 
